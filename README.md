@@ -35,7 +35,7 @@ The pipeline is designed to be **dynamic, scalable, and performance-optimized**,
 - Parallel processing using Python ThreadPool  
 - Stored in JSON format  
 - Folder structure:
-  -/bronze/year=YYYY/month=MM/file_<load_date>.json
+  /bronze/YYYY/MM/file_<load_date>.json
 - Raw data preserved (duplicates allowed)
 
 ---
@@ -59,7 +59,8 @@ The pipeline is designed to be **dynamic, scalable, and performance-optimized**,
 #### Optimizations Applied:
 - Partitioning on low-cardinality columns  
 - Z-ORDER on high-cardinality columns  
-- Liquid Clustering for dimension tables  
+- Liquid Clustering for dimension tables
+- partition and file skipping on merge
 
 ---
 
