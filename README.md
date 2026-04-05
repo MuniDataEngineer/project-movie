@@ -12,7 +12,7 @@ The pipeline is designed to be **dynamic, scalable, and performance-optimized**,
 
 ## 🏗️ Architecture
 
----![Architecture](notebooks/Picture1.png)
+---![Architecture](notebooks/arch.png)
 
 ## ⚙️ Tech Stack
 
